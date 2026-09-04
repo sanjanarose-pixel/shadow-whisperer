@@ -2,7 +2,7 @@
 
 
 
-# Shadow Whisperer 🎯
+# The Shadow-Whisperer
 
 
 ## Basic Details
@@ -43,12 +43,12 @@ git clone https://github.com/sanjanarose-pixel/shadow-whisperer.git
 cd shadow-whisperer
 
 # Run
-python -m http.server 8000 and Open http://localhost:8000 in your browser and allow webcam access.
+python -m http.server 8000
 
 ### Project Documentation
 For Software:
 
-# Screenshots (Add at least 3)
+# Screenshots
 
 ## Meet the Shadow Puppets you can try out! 🌿
 
@@ -72,7 +72,11 @@ Because apparently even shadows need a loyal companion.
 
 ### Project Demo
 # Video
+
+Working of our project
 https://drive.google.com/file/d/1Kw3ovx8kJvHuzukIrOUJKjNnEQjmLx5m/view?usp=drivesdk
+
+A fun tutorial on how you can bring the shapes to life!
 https://drive.google.com/file/d/1Ab47_4uNKS3unxKfmtRotrjKmhVMhZdZ/view?usp=drivesdk
 
 ## Team Contributions
