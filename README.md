@@ -50,22 +50,22 @@ For Software:
 
 # Screenshots (Add at least 3)
 
-## Meet the Shadow Animals 🌿
+## Meet the Shadow Puppets you can try out! 🌿
 
 ### 🦀 Crab
 Our shadow crab brings a little beach chaos into the forest.
 
-<img src="crab.jpg" width="700">
+<img src="crab.jpg" width="600">
 
 ### 🐍 Snake
 A simple hand shadow turns into a sneaky little snake.
 
-<img src="snake.jpg" width="700">
+<img src="snake.jpg" width="600">
 
 ### 🐕 Dog
 Because apparently even shadows need a loyal companion.
 
-<img src="dog.jpg" width="700">
+<img src="dog.jpg" width="600">
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
