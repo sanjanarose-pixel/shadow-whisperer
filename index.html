@@ -1,1 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shadow Animals is a playful activity where hand shadows become animal adventures."
+    />
+    <title>Shadow Animals</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
+  <body>
+    <main class="page-shell">
+      <header class="hero">
+        <div class="hero__badge" aria-hidden="true">✦</div>
+        <p class="eyebrow">Light + imagination</p>
+
+        <h1>Shadow <span>Animals</span></h1>
+
+        <p class="hero__intro">
+          Shine a torch on a wall and turn your hands into a wonderful shadow creature.
+        </p>
+      </header>
+
+      <section class="play-card" aria-labelledby="camera-title">
+        <div class="how-to-play">
+          <span class="how-to-play__icon" aria-hidden="true">💡</span>
+
+          <div>
+            <p class="eyebrow">How to play</p>
+            <p>
+              Point your torch at a plain wall, make a hand-shadow animal,
+              then aim the camera at the wall.
+            </p>
+          </div>
+        </div>
+
+        <div class="camera-heading">
+          <div>
+            <p class="eyebrow">Your shadow stage</p>
+            <h2 id="camera-title">Camera preview</h2>
+          </div>
+
+          <p
+            class="camera-status"
+            id="cameraStatus"
+            role="status"
+            aria-live="polite"
+          >
+            <span class="camera-status__dot" aria-hidden="true"></span>
+            Camera is off
+          </p>
+        </div>
+
+        <div class="camera-frame">
+          <!-- The live camera feed is intentionally left completely normal. -->
+
+          <video
+            id="camera"
+            autoplay
+            muted
+            playsinline
+            aria-label="Live camera preview"
+          ></video>
+
+          <div class="camera-placeholder" id="cameraPlaceholder">
+            <span aria-hidden="true">📷</span>
+            <strong>Ready for a shadow adventure</strong>
+            <p>Start the camera to see the wall.</p>
+          </div>
+        </div>
+
+        <div class="camera-controls" aria-label="Camera controls">
+          <button
+            class="button button--primary"
+            id="startCamera"
+            type="button"
+          >
+            <span aria-hidden="true">▶</span> Start camera
+          </button>
+
+          <button
+            class="button button--secondary"
+            id="stopCamera"
+            type="button"
+            disabled
+          >
+            <span aria-hidden="true">■</span> Stop camera
+          </button>
+        </div>
+
+        <p
+          class="recognition-status"
+          id="recognitionStatus"
+          role="status"
+          aria-live="polite"
+        >
+          <span
+            class="recognition-status__dot"
+            aria-hidden="true"
+          ></span>
+          Loading animal model…
+        </p>
+
+        <p class="privacy-note">
+          Your camera stays in your browser. Nothing is recorded or uploaded.
+        </p>
+      </section>
+    </main>
+
+    <footer>Made for bright ideas and shadowy adventures.</footer>
+
+    <!-- Animal sounds -->
+    <audio id="crabAudio" src="crab.mp3" preload="auto" loop></audio>
+    <audio id="snakeAudio" src="snake.mp3" preload="auto" loop></audio>
+    <audio id="dogAudio" src="dog.mp3" preload="auto" loop></audio>
+
+    <!-- TensorFlow -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+
+    <!-- Teachable Machine -->
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.3/dist/teachablemachine-image.min.js"></script>
+
+    <!-- Our JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

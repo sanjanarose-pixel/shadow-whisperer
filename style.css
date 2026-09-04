@@ -1,0 +1,978 @@
+:root {
+  --forest-deep: #163d29;
+  --forest-dark: #205238;
+  --forest: #2f6b43;
+  --leaf: #4f8a50;
+  --leaf-light: #91b96d;
+  --moss: #b8c982;
+
+  --paper: #fffdf1;
+  --cream: #f3efd8;
+  --warm-white: #fffef8;
+
+  --brown: #76583b;
+  --brown-light: #a27b55;
+
+  --ink: #243b2b;
+  --muted: #697565;
+
+  --line: #d7dfc8;
+  --yellow: #e5bc61;
+
+  --shadow:
+    0 20px 45px rgba(31, 63, 40, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+
+  color: var(--ink);
+
+  /*
+    Warmer, more natural type.
+    No futuristic / overly rounded AI-looking font.
+  */
+  font-family:
+    "Trebuchet MS",
+    "Gill Sans",
+    "Segoe UI",
+    sans-serif;
+
+  background:
+    radial-gradient(
+      ellipse at 5% 0%,
+      rgba(82, 135, 76, 0.25),
+      transparent 22rem
+    ),
+    radial-gradient(
+      ellipse at 97% 5%,
+      rgba(126, 165, 91, 0.23),
+      transparent 20rem
+    ),
+    radial-gradient(
+      ellipse at 50% 100%,
+      rgba(184, 201, 130, 0.25),
+      transparent 26rem
+    ),
+    var(--cream);
+
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* --------------------------------------------------
+   ORGANIC FOREST BACKGROUND
+-------------------------------------------------- */
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Left-side leaves */
+body::before {
+  width: 250px;
+  height: 430px;
+
+  left: -180px;
+  top: 15%;
+
+  border-radius: 70% 30% 65% 35%;
+
+  background:
+    radial-gradient(
+      ellipse at 65% 10%,
+      rgba(63, 125, 77, 0.28) 0 22px,
+      transparent 23px
+    ),
+    radial-gradient(
+      ellipse at 42% 30%,
+      rgba(79, 138, 80, 0.2) 0 27px,
+      transparent 28px
+    ),
+    radial-gradient(
+      ellipse at 65% 52%,
+      rgba(145, 185, 109, 0.22) 0 25px,
+      transparent 26px
+    ),
+    radial-gradient(
+      ellipse at 35% 74%,
+      rgba(63, 125, 77, 0.18) 0 30px,
+      transparent 31px
+    );
+
+  transform: rotate(-12deg);
+}
+
+/* Right-side leaves */
+body::after {
+  width: 280px;
+  height: 400px;
+
+  right: -200px;
+  bottom: 5%;
+
+  border-radius: 35% 65% 40% 60%;
+
+  background:
+    radial-gradient(
+      ellipse at 30% 15%,
+      rgba(79, 138, 80, 0.2) 0 28px,
+      transparent 29px
+    ),
+    radial-gradient(
+      ellipse at 65% 38%,
+      rgba(145, 185, 109, 0.24) 0 25px,
+      transparent 26px
+    ),
+    radial-gradient(
+      ellipse at 35% 63%,
+      rgba(63, 125, 77, 0.18) 0 32px,
+      transparent 33px
+    );
+
+  transform: rotate(15deg);
+}
+
+button {
+  font: inherit;
+}
+
+/* --------------------------------------------------
+   PAGE
+-------------------------------------------------- */
+
+.page-shell {
+  width: min(100% - 2rem, 820px);
+
+  margin: 0 auto;
+
+  padding: 3.8rem 0 2.5rem;
+}
+
+/* --------------------------------------------------
+   HERO
+-------------------------------------------------- */
+
+.hero {
+  position: relative;
+
+  max-width: 680px;
+
+  margin: 0 auto 2.8rem;
+
+  text-align: center;
+
+  animation: appear 500ms ease-out both;
+}
+
+/*
+  Little leaf emblem.
+*/
+.hero__badge {
+  position: relative;
+
+  display: grid;
+
+  width: 68px;
+  height: 68px;
+
+  margin: 0 auto 1rem;
+
+  place-items: center;
+
+  border-radius:
+    48% 52% 45% 55% /
+    55% 45% 55% 45%;
+
+  color: #fffbe5;
+
+  background:
+    linear-gradient(
+      145deg,
+      var(--leaf),
+      var(--forest-dark)
+    );
+
+  box-shadow:
+    0 7px 0 rgba(32, 82, 56, 0.08),
+    0 15px 28px rgba(31, 63, 40, 0.2);
+
+  font-size: 1.55rem;
+
+  transform: rotate(-7deg);
+}
+
+/* Tiny stem */
+.hero__badge::after {
+  content: "";
+
+  position: absolute;
+
+  width: 15px;
+  height: 3px;
+
+  bottom: 10px;
+  right: 11px;
+
+  border-radius: 100%;
+
+  background: var(--leaf-light);
+
+  transform: rotate(-35deg);
+}
+
+.eyebrow {
+  margin: 0;
+
+  color: var(--forest);
+
+  font-size: 0.7rem;
+  font-weight: 900;
+
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+}
+
+/*
+  More natural-looking heading.
+  Avoids the ultra-rounded "AI landing page" look.
+*/
+h1,
+h2 {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  line-height: 1.04;
+}
+
+h1 {
+  margin-top: 0.45rem;
+
+  color: var(--forest-deep);
+
+  font-size:
+    clamp(3rem, 8vw, 5rem);
+
+  font-weight: 700;
+
+  letter-spacing: -0.045em;
+}
+
+h1 span {
+  color: var(--forest);
+
+  font-style: italic;
+}
+
+.hero__intro {
+  max-width: 600px;
+
+  margin: 1rem auto 0;
+
+  color: var(--muted);
+
+  font-family:
+    "Trebuchet MS",
+    "Gill Sans",
+    sans-serif;
+
+  font-size:
+    clamp(1rem, 2.3vw, 1.12rem);
+
+  font-weight: 600;
+
+  line-height: 1.65;
+}
+
+/* --------------------------------------------------
+   MAIN CARD
+-------------------------------------------------- */
+
+.play-card {
+  position: relative;
+
+  padding: 1.55rem;
+
+  border:
+    1px solid rgba(63, 125, 77, 0.2);
+
+  border-radius: 25px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 254, 248, 0.98),
+      rgba(248, 249, 232, 0.98)
+    );
+
+  box-shadow: var(--shadow);
+}
+
+/*
+  Organic vine across the top.
+*/
+.play-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 9%;
+  right: 9%;
+  top: -5px;
+
+  height: 10px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      ellipse at 4% 50%,
+      var(--leaf-light) 0 5px,
+      transparent 6px
+    ),
+    radial-gradient(
+      ellipse at 17% 50%,
+      var(--leaf) 0 4px,
+      transparent 5px
+    ),
+    radial-gradient(
+      ellipse at 31% 50%,
+      var(--moss) 0 5px,
+      transparent 6px
+    ),
+    radial-gradient(
+      ellipse at 47% 50%,
+      var(--leaf) 0 4px,
+      transparent 5px
+    ),
+    radial-gradient(
+      ellipse at 63% 50%,
+      var(--leaf-light) 0 5px,
+      transparent 6px
+    ),
+    radial-gradient(
+      ellipse at 79% 50%,
+      var(--leaf) 0 4px,
+      transparent 5px
+    ),
+    radial-gradient(
+      ellipse at 94% 50%,
+      var(--moss) 0 5px,
+      transparent 6px
+    );
+}
+
+/* --------------------------------------------------
+   HOW TO PLAY
+-------------------------------------------------- */
+
+.how-to-play {
+  display: flex;
+
+  gap: 0.95rem;
+
+  align-items: center;
+
+  margin-bottom: 1.5rem;
+
+  padding: 1rem 1.05rem;
+
+  border: 1px solid #d5ddbd;
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #edf2d7,
+      #faf7e5
+    );
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.how-to-play__icon {
+  display: grid;
+
+  flex: 0 0 44px;
+
+  width: 44px;
+  height: 44px;
+
+  place-items: center;
+
+  border-radius:
+    45% 55% 48% 52%;
+
+  background: #d2dfaa;
+
+  font-size: 1.35rem;
+
+  transform: rotate(-5deg);
+}
+
+.how-to-play .eyebrow {
+  color: var(--forest);
+}
+
+.how-to-play p:last-child {
+  margin: 0.28rem 0 0;
+
+  color: #59644f;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------
+   CAMERA HEADING
+-------------------------------------------------- */
+
+.camera-heading {
+  display: flex;
+
+  gap: 1rem;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-bottom: 1rem;
+}
+
+.camera-heading .eyebrow {
+  margin-bottom: 0.3rem;
+
+  color: var(--brown-light);
+}
+
+h2 {
+  color: var(--forest-deep);
+
+  font-size: 1.55rem;
+
+  font-weight: 700;
+
+  letter-spacing: -0.025em;
+}
+
+/* --------------------------------------------------
+   CAMERA STATUS
+-------------------------------------------------- */
+
+.camera-status {
+  display: inline-flex;
+
+  flex: 0 0 auto;
+
+  gap: 0.45rem;
+
+  align-items: center;
+
+  margin: 0.12rem 0 0;
+
+  padding: 0.43rem 0.7rem;
+
+  border: 1px solid #dce2d3;
+
+  border-radius: 999px;
+
+  color: #687263;
+
+  background: #f3f5e9;
+
+  font-size: 0.74rem;
+
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+.camera-status__dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #a4aa9a;
+}
+
+.camera-status.is-active {
+  color: #276743;
+
+  background: #e5f1df;
+
+  border-color: #c5dbbc;
+}
+
+.camera-status.is-active .camera-status__dot {
+  background: #4d9959;
+
+  box-shadow:
+    0 0 0 3px rgba(76, 154, 92, 0.15);
+}
+
+.camera-status.is-error {
+  color: #9d5360;
+
+  background: #fbecef;
+}
+
+.camera-status.is-error .camera-status__dot {
+  background: #d56d7c;
+}
+
+/* --------------------------------------------------
+   CAMERA WINDOW
+-------------------------------------------------- */
+
+.camera-frame {
+  position: relative;
+
+  display: grid;
+
+  overflow: hidden;
+
+  min-height: 300px;
+
+  place-items: center;
+
+  border: 4px solid #2b5c3a;
+
+  border-radius: 18px;
+
+  background: #263b2c;
+
+  box-shadow:
+    inset 0 0 0 4px rgba(245, 241, 220, 0.35),
+    0 12px 25px rgba(31, 63, 40, 0.17);
+}
+
+video {
+  display: block;
+
+  width: 100%;
+
+  min-height: 300px;
+
+  max-height: 500px;
+
+  object-fit: cover;
+
+  background: #263b2c;
+}
+
+/*
+  Before camera starts:
+  a softer woodland-style scene rather than
+  a generic grey rectangle.
+*/
+.camera-placeholder {
+  position: absolute;
+
+  inset: 0;
+
+  display: grid;
+
+  align-content: center;
+
+  justify-items: center;
+
+  padding: 1.5rem;
+
+  color: var(--muted);
+
+  text-align: center;
+
+  background:
+    radial-gradient(
+      ellipse at 20% 15%,
+      rgba(145, 185, 109, 0.35),
+      transparent 10rem
+    ),
+    radial-gradient(
+      ellipse at 82% 75%,
+      rgba(79, 138, 80, 0.22),
+      transparent 11rem
+    ),
+    linear-gradient(
+      145deg,
+      #edf1dd,
+      #e5ead4
+    );
+}
+
+.camera-placeholder[hidden] {
+  display: none;
+}
+
+.camera-placeholder span {
+  margin-bottom: 0.55rem;
+
+  font-size: 2.4rem;
+
+  filter: saturate(0.8);
+}
+
+.camera-placeholder strong {
+  color: var(--forest-deep);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 1.15rem;
+}
+
+.camera-placeholder p {
+  margin: 0.3rem 0 0;
+
+  color: var(--muted);
+
+  font-size: 0.87rem;
+
+  font-weight: 600;
+}
+
+/* --------------------------------------------------
+   BUTTONS
+-------------------------------------------------- */
+
+.camera-controls {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.7rem;
+
+  margin-top: 1.05rem;
+}
+
+.button {
+  display: inline-flex;
+
+  gap: 0.55rem;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 46px;
+
+  padding: 0.72rem 1.08rem;
+
+  border: 1px solid transparent;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  font-size: 0.88rem;
+
+  font-weight: 900;
+
+  transition:
+    transform 170ms ease,
+    background-color 170ms ease,
+    box-shadow 170ms ease;
+}
+
+.button:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.button:focus-visible {
+  outline: 3px solid rgba(63, 125, 77, 0.3);
+
+  outline-offset: 3px;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+
+  opacity: 0.52;
+}
+
+.button--primary {
+  color: #fff;
+
+  background:
+    linear-gradient(
+      145deg,
+      var(--forest),
+      var(--forest-dark)
+    );
+
+  box-shadow:
+    0 5px 12px rgba(40, 92, 61, 0.22);
+}
+
+.button--primary:hover:not(:disabled) {
+  background: var(--forest-deep);
+
+  box-shadow:
+    0 8px 18px rgba(40, 92, 61, 0.25);
+}
+
+.button--secondary {
+  color: var(--forest-dark);
+
+  border-color: #d4dccd;
+
+  background: var(--warm-white);
+}
+
+.button--secondary:hover:not(:disabled) {
+  background: #f0f4e6;
+}
+
+/* --------------------------------------------------
+   RECOGNITION
+-------------------------------------------------- */
+
+.recognition-status {
+  display: inline-flex;
+
+  gap: 0.45rem;
+
+  align-items: center;
+
+  margin: 0.9rem 0 0;
+
+  padding: 0.47rem 0.7rem;
+
+  border: 1px solid #dfe3d7;
+
+  border-radius: 999px;
+
+  color: #66705f;
+
+  background: #f2f3e9;
+
+  font-size: 0.75rem;
+
+  font-weight: 800;
+}
+
+.recognition-status__dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #9ba18f;
+}
+
+.recognition-status.is-ready {
+  color: #506d55;
+
+  background: #eaf0df;
+
+  border-color: #d4dfc5;
+}
+
+.recognition-status.is-ready .recognition-status__dot {
+  background: #759b64;
+}
+
+.recognition-status.is-detected {
+  color: #276743;
+
+  background: #e4f1df;
+
+  border-color: #c6ddbd;
+}
+
+.recognition-status.is-detected .recognition-status__dot {
+  background: #4c9a5c;
+
+  box-shadow:
+    0 0 0 3px rgba(76, 154, 92, 0.16);
+}
+
+.recognition-status.is-error {
+  color: #9d5360;
+
+  background: #fbecef;
+
+  border-color: #f1d0d7;
+}
+
+.recognition-status.is-error .recognition-status__dot {
+  background: #d56d7c;
+}
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+
+.privacy-note {
+  margin: 0.9rem 0 0;
+
+  color: var(--muted);
+
+  font-size: 0.77rem;
+
+  font-weight: 600;
+
+  line-height: 1.45;
+}
+
+footer {
+  padding: 0 1rem 2rem;
+
+  color: #71806d;
+
+  text-align: center;
+
+  font-size: 0.77rem;
+
+  font-weight: 700;
+}
+
+/* --------------------------------------------------
+   ANIMATION
+-------------------------------------------------- */
+
+@keyframes appear {
+  from {
+    opacity: 0;
+
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* --------------------------------------------------
+   MOBILE
+-------------------------------------------------- */
+
+@media (max-width: 600px) {
+  .page-shell {
+    width: min(100% - 1.2rem, 600px);
+
+    padding-top: 2.4rem;
+  }
+
+  .hero {
+    margin-bottom: 2rem;
+  }
+
+  .hero__badge {
+    width: 60px;
+    height: 60px;
+  }
+
+  h1 {
+    font-size: clamp(2.8rem, 13vw, 4rem);
+  }
+
+  .play-card {
+    padding: 1.1rem;
+
+    border-radius: 20px;
+  }
+
+  .how-to-play {
+    align-items: flex-start;
+
+    margin-bottom: 1.15rem;
+
+    padding: 0.9rem;
+  }
+
+  .camera-frame,
+  video {
+    min-height: 235px;
+  }
+
+  .camera-controls .button {
+    flex: 1 1 140px;
+  }
+}
+
+@media (max-width: 440px) {
+  .camera-heading {
+    flex-wrap: wrap;
+
+    gap: 0.65rem;
+  }
+
+  .camera-status {
+    margin-top: 0;
+  }
+}
+
+@media (max-height: 620px) and (orientation: landscape) {
+  .page-shell {
+    width: min(100% - 2rem, 880px);
+
+    padding-top: 1.35rem;
+  }
+
+  .hero {
+    margin-bottom: 1.2rem;
+  }
+
+  .hero__badge {
+    width: 45px;
+    height: 45px;
+
+    margin-bottom: 0.4rem;
+  }
+
+  .hero__intro {
+    margin-top: 0.45rem;
+  }
+
+  .how-to-play {
+    margin-bottom: 1rem;
+
+    padding: 0.75rem 0.9rem;
+  }
+
+  .camera-frame,
+  video {
+    min-height: 190px;
+
+    max-height: 55vh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+
+    animation-duration: 0.01ms !important;
+
+    transition-duration: 0.01ms !important;
+  }
+}
