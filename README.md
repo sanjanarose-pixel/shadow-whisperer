@@ -20,10 +20,10 @@ It is completely unnecessary, slightly ridiculous, and surprisingly fun.
 Because honestly, who said useless projects cannot be magical?
 
 ### The Problem (that doesn't exist)
-Sometimes you have a perfectly good shadow puppet and absolutely no idea what animal it is. Honestly, unacceptable.
+We think every shadow puppet deserves a voice.
 
 ### The Solution (that nobody asked for)
-Shadow Whisperer watches your shadow through the camera, figures out whether it is a dog, crab, or snake, and makes the correct animal sound. Because apparently shadows needed a voice.
+Shadow Whisperer watches your shadow through the camera, figures out whether it is a dog, crab, or snake, and makes the correct animal sound. Because apparently shadows needed a voice, if you are willing to listen.
 
 ## Technical Details
 ### Technologies/Components Used
@@ -39,8 +39,7 @@ For Software:
 ### Implementation
 For Software:
 # Installation
-git clone https://github.com/sanjanarose-pixel/shadow-whisperer.git
-cd shadow-whisperer
+git clone https://github.com/sanjanarose-pixel/shadow-whisperer.git and cd shadow-whisperer
 
 # Run
 python -m http.server 8000
