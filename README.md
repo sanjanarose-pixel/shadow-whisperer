@@ -14,16 +14,16 @@
 - Member 2: Aafia Gause - Muthoot Institute of Technology and Science
 
 ### Project Description
-Shine a light, make a shadow, and let the forest come alive. 
+Shine a light, make a shadow and let the puppets come alive. 
 Shadow Whisperer recognizes your animal shadow puppets and gives them their own sounds.
-It is completely unnecessary, slightly ridiculous, and surprisingly fun.
+It is completely unnecessary, slightly ridiculous and surprisingly fun.
 Because honestly, who said useless projects cannot be magical?
 
 ### The Problem (that doesn't exist)
 We think every shadow puppet deserves a voice.
 
 ### The Solution (that nobody asked for)
-Shadow Whisperer watches your shadow through the camera, figures out whether it is a dog, crab, or snake, and makes the correct animal sound. Because apparently shadows needed a voice, if you are willing to listen.
+Shadow Whisperer watches your shadow through the camera, figures out whether it is a dog, crab, or snake and makes the correct animal sound. Because apparently shadows needed a voice, if you are willing to listen.
 
 ## Technical Details
 ### Technologies/Components Used
