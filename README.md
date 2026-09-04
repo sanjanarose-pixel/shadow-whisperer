@@ -49,6 +49,11 @@ python -m http.server 8000 and Open http://localhost:8000 in your browser and al
 For Software:
 
 # Screenshots (Add at least 3)
+<p align="center">
+  <img src="./crab.heic" width="300" alt="Crab shadow puppet">
+  <img src="./snake.heic" width="300" alt="Snake shadow puppet">
+  <img src="./dog.heic" width="300" alt="Dog shadow puppet">
+</p>
 <img width="1280" height="640" alt="git (1)" src="https://drive.google.com/file/d/1DWcnqMlrBJJ8pn7gg9anqQ5P4YBjdEii/view?usp=drivesdk" />
 *Add caption explaining what this shows*
 
