@@ -2,49 +2,48 @@
 
 
 
-# [Shadow Whisperer] 🎯
+# Shadow Whisperer 🎯
 
 
 ## Basic Details
-### Team Name: [Pixel Pixies]
+### Team Name: Pixel Pixies
 
 
 ### Team Members
-- Team Lead: [Sanjana Sujith] - [Muthoot Institute of Technology and Science]
-- Member 2: [Aafia Gause] - [Muthoot Institute of Technology and Science]
+- Team Lead: Sanjana Sujith - Muthoot Institute of Technology and Science
+- Member 2: Aafia Gause - Muthoot Institute of Technology and Science
 
 ### Project Description
-[Shine a light, make a shadow, and let the forest come alive. 
+Shine a light, make a shadow, and let the forest come alive. 
 Shadow Whisperer recognizes your animal shadow puppets and gives them their own sounds.
 It is completely unnecessary, slightly ridiculous, and surprisingly fun.
-Because honestly, who said useless projects cannot be magical?]
+Because honestly, who said useless projects cannot be magical?
 
 ### The Problem (that doesn't exist)
-[Sometimes you have a perfectly good shadow puppet and absolutely no idea what animal it is. Honestly, unacceptable.]
+Sometimes you have a perfectly good shadow puppet and absolutely no idea what animal it is. Honestly, unacceptable.
 
 ### The Solution (that nobody asked for)
-[Shadow Whisperer watches your shadow through the camera, figures out whether it is a dog, crab, or snake, and makes the correct animal sound. Because apparently shadows needed a voice.]
+Shadow Whisperer watches your shadow through the camera, figures out whether it is a dog, crab, or snake, and makes the correct animal sound. Because apparently shadows needed a voice.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used: HTML, CSS, JavaScript]
-- [Libraries used: Teachable Machine, TensorFlow.js]
-- [Tools used: Visual Studio Code, Git, GitHub]
-- [AI tools used: OpenAI Codex for development assistance]
-- [Machine Learning: Google Teachable Machine for training the shadow animal classification model and real time webcam based recognition]
+- Languages used: HTML, CSS, JavaScript
+- Libraries used: Teachable Machine, TensorFlow.js
+- Tools used: Visual Studio Code, Git, GitHub
+- AI tools used: OpenAI Codex for development assistance
+- Machine Learning: Google Teachable Machine for training the shadow animal classification model and real time webcam based recognition
 
 
 
 ### Implementation
 For Software:
 # Installation
-[git clone https://github.com/sanjanarose-pixel/shadow-whisperer.git
-cd shadow-whisperer]
+git clone https://github.com/sanjanarose-pixel/shadow-whisperer.git
+cd shadow-whisperer
 
 # Run
-[python -m http.server 8000
-Open http://localhost:8000 in your browser and allow webcam access.]
+python -m http.server 8000 and Open http://localhost:8000 in your browser and allow webcam access.
 
 ### Project Documentation
 For Software:
