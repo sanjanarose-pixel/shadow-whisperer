@@ -50,23 +50,22 @@ For Software:
 
 # Screenshots (Add at least 3)
 
-## 🦀 Crab
+## Meet the Shadow Animals 🌿
 
-A crab shadow that somehow has a very important job: making crab noises.
+### 🦀 Crab
+Our shadow crab brings a little beach chaos into the forest.
 
-<img width="500" alt="Crab shadow puppet" src="./crab.heic" />
+<img src="crab.jpg" width="700">
 
-## 🐍 Snake
+### 🐍 Snake
+A simple hand shadow turns into a sneaky little snake.
 
-A snake that waits patiently in the shadows until it gets recognized.
+<img src="snake.jpg" width="700">
 
-<img width="500" alt="Snake shadow puppet" src="./snake.heic" />
+### 🐕 Dog
+Because apparently even shadows need a loyal companion.
 
-## 🐕 Dog
-
-A dog that proves shadows can have a voice too.
-
-<img width="500" alt="Dog shadow puppet" src="./dog.heic" />
+<img src="dog.jpg" width="700">
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
