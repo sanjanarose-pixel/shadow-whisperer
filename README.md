@@ -50,9 +50,9 @@ For Software:
 
 # Screenshots (Add at least 3)
 <p align="center">
-  <img src="./crab.heic" width="300" alt="Crab shadow puppet">
-  <img src="./snake.heic" width="300" alt="Snake shadow puppet">
-  <img src="./dog.heic" width="300" alt="Dog shadow puppet">
+  <img src="./crab.jpg" alt="Crab shadow puppet" width="300">
+  <img src="./snake.jpg" alt="Snake shadow puppet" width="300">
+  <img src="./dog.jpg" alt="Dog shadow puppet" width="300">
 </p>
 <img width="1280" height="640" alt="git (1)" src="https://drive.google.com/file/d/1DWcnqMlrBJJ8pn7gg9anqQ5P4YBjdEii/view?usp=drivesdk" />
 *Add caption explaining what this shows*
