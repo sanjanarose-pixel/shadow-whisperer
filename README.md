@@ -2,47 +2,49 @@
 
 
 
-# [Project Name] 🎯
+# [Shadow Whisperer] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [Pixel Pixies]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: [Sanjana Sujith] - [Muthoot Institute of Technology and Science]
+- Member 2: [Aafia Gause] - [Muthoot Institute of Technology and Science]
 
 ### Project Description
-[2-3 lines about what your project does]
+[Shine a light, make a shadow, and let the forest come alive. 
+Shadow Whisperer recognizes your animal shadow puppets and gives them their own sounds.
+It is completely unnecessary, slightly ridiculous, and surprisingly fun.
+Because honestly, who said useless projects cannot be magical?]
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+[Sometimes you have a perfectly good shadow puppet and absolutely no idea what animal it is. Honestly, unacceptable.]
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+[Shadow Whisperer watches your shadow through the camera, figures out whether it is a dog, crab, or snake, and makes the correct animal sound. Because apparently shadows needed a voice.]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- [Languages used: HTML, CSS, JavaScript]
+- [Libraries used: Teachable Machine, TensorFlow.js]
+- [Tools used: Visual Studio Code, Git, GitHub]
+- [AI tools used: OpenAI Codex for development assistance]
+- [Machine Learning: Google Teachable Machine for training the shadow animal classification model and real time webcam based recognition]
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+
 
 ### Implementation
 For Software:
 # Installation
-[commands]
+[git clone https://github.com/sanjanarose-pixel/shadow-whisperer.git
+cd shadow-whisperer]
 
 # Run
-[commands]
+[python -m http.server 8000
+Open http://localhost:8000 in your browser and allow webcam access.]
 
 ### Project Documentation
 For Software:
