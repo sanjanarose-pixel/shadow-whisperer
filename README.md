@@ -50,6 +50,7 @@ For Software:
 # Screenshots
 
 ## Meet the Shadow Puppets you can try out! 🌿
+To start with, we've trained the model with the below 3 shadow puppets. Try them all out!
 
 ### 🦀 Crab
 Our shadow crab brings a little beach chaos into the forest.
