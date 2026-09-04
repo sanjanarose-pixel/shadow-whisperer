@@ -72,8 +72,8 @@ Because apparently even shadows need a loyal companion.
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+https://drive.google.com/file/d/1Kw3ovx8kJvHuzukIrOUJKjNnEQjmLx5m/view?usp=drivesdk
+https://drive.google.com/file/d/1Ab47_4uNKS3unxKfmtRotrjKmhVMhZdZ/view?usp=drivesdk
 
 # Additional Demos
 [Add any extra demo materials/links]
