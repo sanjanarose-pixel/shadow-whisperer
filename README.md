@@ -75,13 +75,11 @@ Because apparently even shadows need a loyal companion.
 https://drive.google.com/file/d/1Kw3ovx8kJvHuzukIrOUJKjNnEQjmLx5m/view?usp=drivesdk
 https://drive.google.com/file/d/1Ab47_4uNKS3unxKfmtRotrjKmhVMhZdZ/view?usp=drivesdk
 
-# Additional Demos
-[Add any extra demo materials/links]
-
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+* **Sanjana Sujith:** Worked on training and testing the Teachable Machine model, prepared the animal shadow datasets for the crab, dog, and snake, and helped evaluate and improve recognition accuracy.
+* **Aafia Gause:** Developed the web application, integrated the webcam based shadow detection, connected the Teachable Machine model, and implemented the animal recognition and sound triggering logic.
+
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
