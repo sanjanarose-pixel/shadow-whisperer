@@ -49,19 +49,24 @@ python -m http.server 8000 and Open http://localhost:8000 in your browser and al
 For Software:
 
 # Screenshots (Add at least 3)
-<p align="center">
-  <img src="./crab.jpg" alt="Crab shadow puppet" width="300">
-  <img src="./snake.jpg" alt="Snake shadow puppet" width="300">
-  <img src="./dog.jpg" alt="Dog shadow puppet" width="300">
-</p>
-<img width="1280" height="640" alt="git (1)" src="https://drive.google.com/file/d/1DWcnqMlrBJJ8pn7gg9anqQ5P4YBjdEii/view?usp=drivesdk" />
-*Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+## 🦀 Crab
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+A crab shadow that somehow has a very important job: making crab noises.
+
+<img width="500" alt="Crab shadow puppet" src="./crab.heic" />
+
+## 🐍 Snake
+
+A snake that waits patiently in the shadows until it gets recognized.
+
+<img width="500" alt="Snake shadow puppet" src="./snake.heic" />
+
+## 🐕 Dog
+
+A dog that proves shadows can have a voice too.
+
+<img width="500" alt="Dog shadow puppet" src="./dog.heic" />
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
