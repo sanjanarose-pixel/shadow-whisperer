@@ -54,17 +54,17 @@ For Software:
 ### 🦀 Crab
 Our shadow crab brings a little beach chaos into the forest.
 
-<img src="crab.jpg" width="600">
+<img src="crab1.jpg" width="600">
 
 ### 🐍 Snake
 A simple hand shadow turns into a sneaky little snake.
 
-<img src="snake.jpg" width="600">
+<img src="snake1.jpg" width="600">
 
 ### 🐕 Dog
 Because apparently even shadows need a loyal companion.
 
-<img src="dog.jpg" width="600">
+<img src="dog1.jpg" width="600">
 
 # Diagrams
 <img src="architecture.png" width="600">
